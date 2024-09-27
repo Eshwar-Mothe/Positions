@@ -1,0 +1,200 @@
+html,
+body {
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.header {
+    background-size: cover;
+    position: relative;
+    height: 50px;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), blue);
+}
+
+.header p {
+    position: absolute;
+    width: 100%;
+    font-size: 45px;
+    padding: 15px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-weight: 600;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.sticky_exp,
+.abs_exp,
+.Zindex {
+    margin: 2%;
+    border: 5px solid gray;
+    border-radius: 15px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /*It is must*/
+    height: 400px;
+    overflow: auto;
+    background-color: #8EACCD;
+    /* float: right; */
+}
+
+
+.sticky_exp::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sticky_exp::-webkit-scrollbar-track {
+    border-radius: 15px;
+}
+
+.sticky_exp::-webkit-scrollbar-thumb {
+    background: #D2E0FB;
+    border-radius: 10px;
+}
+
+.sticky_exp header {
+    background-color: aquamarine;
+    border: 2px solid #8ecd8e;
+    border-style: inherit;
+    padding: 10px;
+    text-align: center;
+}
+
+.sticky_exp p {
+    padding: 5px;
+    word-break: break-all;
+
+}
+
+.non_sticky p {
+    background-color: #FEF9D9;
+    position: static;
+    /* top: 0; */
+    /* fixed,abs,relative,static,sticky */
+}
+
+.sticky p {
+    background-color: #DEE5D4;
+}
+
+.sticky header {
+    background-color: #C5705D;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Second box explanation */
+
+.abs_exp {
+    background-color: #91DDCF;
+}
+
+.rel {
+    position: relative;
+    top: 20%;
+    left: 40%;
+    width: 50%;
+    height: 60%;
+    border: 2px solid yellow;
+    overflow: auto;
+}
+
+.abs {
+    text-align: center;
+    border: 2px solid rgb(0, 183, 255);
+    font-size: 20px;
+    /* left: 90%;
+    top: 90%; */
+    margin: 10px;
+    position: absolute;
+}
+
+.fixed{
+    position: fixed;
+    background-color: #7bff00;
+    top: 0%;
+    left: 90%;
+    /* z-index: 999; */
+}
+
+.Zindex{
+    position: relative;
+}
+.Zindex div{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    border: 1px solid gray;
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.index1 {
+    background-color: #C5705D;
+    z-index: 1;
+    top: 10px;
+    left: 20px;
+}
+
+.index2 {
+    background-color: #8FC55D;
+    z-index: 2;
+    top: 60px;
+    left: 40px;
+}
+
+.index3 {
+    background-color: #CD8EBA;
+    z-index: 3;
+    top: 100px;
+    left: 60px;
+}
+
+.index4 {
+    background-color: #C5B65D;
+    z-index: 4;
+    top: 140px;
+    left: 80px;
+}
+
+
+.float_exp{
+    border: 2px solid #C5705D;
+    background-color: #91DDCF;
+    height: 150px;
+}
+
+.wc{
+    clear: both;
+    background-color: #91DDCF;
+    border: 2px solid #C5705D;
+    margin-top: 15px;
+
+}
+
+.woc img{
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    float: right;
+}
+
+.wc img{
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    float: left;
+}
+
+.content2{
+    clear: left;
+}
